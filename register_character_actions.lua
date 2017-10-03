@@ -56,4 +56,9 @@ add_action("whereami",  "dofile(\"actions/debug/whereami.lua\")");
 add_action("whoami",    "dofile(\"actions/debug/whoami.lua\")");
 add_action("hop",       "dofile(\"actions/debug/hop.lua\")");
 
+
+new_add_action("prier", "dofile(\"actions/pray.lua\")"); --syntaxe equivalente a add_action()
+declare_action("oui") -- sert a declarer l'existence d'une action sans associer de handler
+declare_action("non")
+
 info("Character actions loaded.");

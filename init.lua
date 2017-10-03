@@ -2,6 +2,8 @@
 
 setverbose()
 info("Lua Init...")
+async = require("eventhandler/async") -- module asynchrone
+dofile("common.lua") -- petit layer d'adaptation/glue
 
 row = 0
 dofile("tileset/base.lua")
